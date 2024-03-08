@@ -1,0 +1,91 @@
+*{/*Selecciona todos los elementos del documento.*/
+    box-sizing: border-box;/* Establece el modelo de caja para todos los elementos como border-box, lo que
+    significa que el tamaño total del elemento incluirá el padding y el borde, y no se añadirá al ancho 
+    especificado.*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',/*Define la 
+    familia de fuentes para todos los elementos seleccionados. */
+    Geneva, Verdana, sans-serif;
+    font-weight: bold;/*Establece el peso de la fuente a negrita para todos los elementos.*/
+}
+.left{/*Selecciona elementos con la clase "left".*/
+    background-color: palegoldenrod;/* Establece el color de fondo.*/
+    padding: 29px;/*Define el relleno (espacio interior) del elemento a 29 pixeles.*/
+    float: left;/*Hace que el elemento se mueva a la izquierda dentro de su contenedor.*/
+    width: 30%;/* Establece el ancho del elemento al 20% del ancho del contenedor.*/
+    color: white;/*Establece el color del texto.*/
+    text-align: center;/*Centra el texto dentro del elemento.*/
+}
+body{/* Selecciona el elemento body del documento. */
+    margin: 0;/*Establece el margen del cuerpo a 
+    cero para eliminar cualquier espacio entre el borde del cuerpo y el borde del navegador.*/
+    background-color: azure;/*Establece el color de fondo del cuerpo.*/
+}
+.main{/*Selecciona elementos con la clase "main".*/
+    background-color: red;/*Establece el color de fondo.*/
+    padding: 29px;/* Define el relleno (espacio interior) del elemento a 20 pixeles.*/
+    float: left;/*Hace que el elemento se mueva a la izquierda dentro de su contenedor.*/
+    width: 40%;/* Establece el ancho del elemento al 40% del ancho del contenedor.*/
+    color: white;/*Establece el color del texto.*/
+    text-align: center;/*Centra el texto dentro del elemento.*/
+}
+.derecha{/* Selecciona elementos con la clase "derecha". */
+    background-color: purple;/*Establece el color de fondo.*/
+    padding: 29px;/*Define el relleno (espacio interior) del elemento a 29 pixeles.*/
+    float: left;/*Hace que el elemento se mueva a la izquierda dentro de su contenedor.*/
+    width: 30%;/*Establece el ancho del elemento al 25% del ancho del contenedor.*/
+    color: white;/*Establece el color del texto*/
+    text-align: center;/*Centra el texto dentro del elemento.*/
+}
+.imagen1{
+    width: 100px;/* Establece el ancho del elemento al 100% del ancho del contenedor.*/
+    height: 170px;/*Establece el largo del elemento en 170 pixeles*/
+    z-index: -1;/*Significa que el elemento estará por detrás con respecto al documento*/
+}
+@media screen and (max-width: 800px){/*Define un punto de interrupción de medios para pantallas
+    con un ancho máximo de 1284px.*/
+    .left{
+        width: 100%;
+    }/* Establece un elemento de una clase llamada "left" */
+    .main{
+        width: 100%;
+    }/* Establece un elemento de una clase llamada "main" */
+    .derecha{/*Establece el ancho de los elementos seleccionados al 100% del ancho del contenedor 
+        /* cuando la pantalla sea menor o igual a 1284px.*/ 
+        width: 100%;
+    }
+    .banner nav ul li a{
+        display: block;
+        margin-right: 0;
+    }
+}
+.banner {/*Se indica que se va a estilar un elemento con el nombre de esta clase*/
+    background-color: #333;/*Establece el color de fondo del elemento*/
+    color: #fff;/*Establece el color de las letras del elemento*/
+    padding: 20px;/*Se agrega un espacio de 20 pixeles en todas las direcciones*/
+    text-align: center;/*Indica que el texto dentro del div estará centrado*/
+}
+
+.banner h1 {/*Se estila la etiqueta que está dentro del div "banner"*/
+    margin: 0;/*No habrá margen*/
+}
+
+.banner nav ul {/*Significa que vamos a estilar la lista desordenada del contenedor "banner"*/
+    list-style-type: none;/*Se indica que se quitarán los elementos de listas desordenadas*/
+    padding: 0;/*Se establece que no habrá espacio en los cuatro lados de un elemento.*/
+}
+
+.banner nav ul li {/*Con esto alteraremos cada uno de las etiquetas de listas en el contenedor "banner"*/
+    display: inline;/*el elemento ocupará solo el espacio horizontal necesario para mostrar su contenido, 
+    y no creará un salto de línea después de sí mismo.*/
+    margin-right: 20px; /*Simbolida que el margen de la derecha del elemento será de 20 pixeles*/
+}
+
+.banner nav ul li:last-child {/*Con este elemento sólo se va a alterar al último elemento de la lista desordenada*/
+    margin-right: 0;/*Significa que no habrá espacio a la derecha del último elemento*/
+}
+
+.banner nav ul li a {/*Esto simboliza que los elementos de la lista que están "anclados" o remarcados serán 
+    alterados*/
+    color: #fff;/*Si boliza que las letras tendrán un color blanco*/
+    text-decoration: none; /*Signifca que el último párrafo no será alterado*/
+}
